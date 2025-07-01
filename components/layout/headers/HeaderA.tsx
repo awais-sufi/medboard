@@ -8,7 +8,7 @@ export default function HeaderA() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-10 left-0 w-full bg-white z-50 text-gray-600 body-font">
+    <header className="top-0 left-0 w-full bg-white z-50 text-gray-600 body-font">
       {/* Main navbar container */}
       <div className="container mx-auto flex p-5 items-center justify-between">
         {/* Logo */}
@@ -27,13 +27,19 @@ export default function HeaderA() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex flex-1 items-center justify-center gap-x-10">
-          <Link href="/" className="hover:text-gray-900">About us</Link>
-          <Link href="/" className="hover:text-gray-900">Healthcare professionals</Link>
-          <Link href="/" className="hover:text-gray-900 text-[#31C137]">Employer Login</Link>
+          <Link href="/" className="hover:text-gray-900">
+            About us
+          </Link>
+          <Link href="/" className="hover:text-gray-900">
+            Healthcare professionals
+          </Link>
+          <Link href="/" className="hover:text-gray-900 text-[#31C137]">
+            Employer Login
+          </Link>
         </nav>
-          <div className="hidden md:block ml-2">
-            <Button />
-          </div>
+        <div className="hidden md:block ml-2">
+          <Button />
+        </div>
 
         {/* Hamburger Button */}
         <button
@@ -81,13 +87,25 @@ export default function HeaderA() {
 
             {/* Mobile Nav */}
             <nav className="flex flex-col space-y-6 text-lg w-full">
-              <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-gray-900">
+              <Link
+                href="/"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-gray-900"
+              >
                 About us
               </Link>
-              <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-gray-900">
+              <Link
+                href="/"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-gray-900"
+              >
                 Healthcare professionals
               </Link>
-              <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-gray-900 text-[#31C137]">
+              <Link
+                href="/"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-gray-900 text-[#31C137]"
+              >
                 Employer Login
               </Link>
               <div className="ml-2">

@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+:root {
+  --color-gareen: #31C137;
+  --color-gray: #7E7E7E;
+}
+
+.bg-gareen {
+  background-color: var(--color-gareen);
+}
+.text-gareen {
+  color: var(--color-gareen);
+}
+
+.text-gray {
+  color: var(--color-gray);
+}

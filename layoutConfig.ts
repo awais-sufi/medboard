@@ -2,7 +2,7 @@
 export const layoutConfig = {
   home: {
     header: 'A',
-    footer: 'B',
+    footer: 'A',
     title: 'Welcome to Home Page',
   },
   about: {
