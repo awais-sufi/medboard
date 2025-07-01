@@ -8,14 +8,11 @@ export default function HeaderA() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="top-0 left-0 w-full bg-white z-50 text-gray-600 body-font">
+    <header className="fixed top-0 pt-8 left-0 w-full bg-white z-50">
       {/* Main navbar container */}
-      <div className="container mx-auto flex p-5 items-center justify-between">
+      <div className="container px-8 mx-auto flex p-5 items-center justify-between">
         {/* Logo */}
-        <Link
-          href="/"
-          className="flex title-font font-medium items-center text-gray-900"
-        >
+        <Link href="/">
           <Image
             src="/images/logo.svg"
             alt="MedBoard Logo"
@@ -26,18 +23,18 @@ export default function HeaderA() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex flex-1 items-center justify-center gap-x-10">
-          <Link href="/" className="hover:text-gray-900">
+        <nav className="hidden md:flex flex-1 text-xl font-medium items-center justify-end gap-x-10">
+          <Link href="/" className="hover:text-gray-900 text-black">
             About us
           </Link>
-          <Link href="/" className="hover:text-gray-900">
+          <Link href="/" className="hover:text-gray-900 text-black">
             Healthcare professionals
           </Link>
           <Link href="/" className="hover:text-gray-900 text-[#31C137]">
             Employer Login
           </Link>
         </nav>
-        <div className="hidden md:block ml-2">
+        <div className="hidden md:block ml-13">
           <Button />
         </div>
 

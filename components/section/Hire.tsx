@@ -15,14 +15,14 @@ const Hire = () => {
           onClick={toggleDot}
         >
           <span
-            className={`w-4 h-4 rounded-full border-2 border-green-500 mr-2 transition-all duration-300 ${
+            className={`w-10 h-10 rounded-full border-2 border-green-500 mr-2 transition-all duration-300 ${
               isFilled ? "bg-green-500" : "bg-transparent"
             }`}
           ></span>
-          <h2 className="text-3xl font-semibold text-black whitespace-nowrap mr-4">
+          <h2 className="text-4xl font-bold  whitespace-nowrap mr-4">
             Why hire through us
           </h2>
-          <div className="flex-grow border-t border-gray-300"></div>
+          <div className="flex-grow border-t border-gray-200"></div>
         </div>
 
         {/* Grid Layout for Content */}
@@ -30,31 +30,31 @@ const Hire = () => {
           {/* Text Block */}
           <div>
             <div className="mb-8 ">
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-3xl font-bold mb-3">
                 Reach the right candidate
               </h3>
-              <p className="text-gray-700 text-lg font-ubuntu leading-relaxed">
+              <p className="text-gray font-semibold font-ubuntu text-2xl">
                 Medbord exclusively designed for healthcare professionals.
                 Posted jobs will be automatically targeted to the right
                 candidate.
               </p>
             </div>
 
-            <div className="mb-8">
-              <h3 className="text-2xl font-semibold mb-2">
+            <div className="mb-8 mt-15">
+              <h3 className="text-3xl font-bold mb-3">
                 One dashboard to control all candidates
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray font-semibold font-ubuntu text-2xl">
                 Control all your candidates and applications in one place. Talk
                 to any candidates with our secured messages.
               </p>
             </div>
 
-            <div>
-              <h3 className="text-3xl font-semibold mb-2">
+            <div className="mt-15">
+              <h3 className="text-3xl font-bold mb-3">
                 We’re Here For You 24/7
               </h3>
-              <p className="text-gray-700 font-ubuntu text-2xl">
+              <p className="text-gray font-semibold font-ubuntu text-2xl">
                 Our team of experts are here for you, anything from answering
                 any questions to resolving any issues, at any time.
               </p>
