@@ -15,6 +15,7 @@ export default function FooterA() {
                 width={174}
                 height={32}
                 priority
+                style={{ height: "auto" }} // ✅ Maintain aspect ratio
               />
             </Link>
 
@@ -38,14 +39,16 @@ export default function FooterA() {
             </div>
 
             <div className="flex space-x-4 mt-6">
-              <Link href="/">
+              <div className="relative w-6 h-6">
                 <Image
                   src="/images/facebook.svg"
                   alt="Facebook"
-                  width={24}
-                  height={24}
+                  fill
+                  className="object-contain"
+                  sizes="24px"
                 />
-              </Link>
+              </div>
+
               <Link href="/">
                 <Image
                   src="/images/twitter.svg"

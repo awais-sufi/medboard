@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -18,9 +19,11 @@ const Hero = () => {
               Entering our vast, global network of top-tier talents begins with
               creating an account. Let’s build a healthier future, together.
             </p>
-            <button className="bg-gareen text-white px-6 py-3 text-lg hover:bg-green-700 transition">
-              Create account
-            </button>
+            <Link href="/account">
+              <button className="bg-gareen text-white px-6 py-3 text-lg hover:bg-green-700 transition">
+                Create account
+              </button>
+            </Link>
           </div>
 
           {/* Right Image */}
@@ -31,6 +34,7 @@ const Hero = () => {
               width={500}
               alt="hero"
               src="/images/1hero.svg"
+              priority
             />
           </div>
         </div>

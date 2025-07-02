@@ -8,7 +8,7 @@ export default function HeaderA() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 pt-8 left-0 w-full bg-white z-50">
+    <header className="top-0 pt-8 left-0 w-full bg-white z-50">
       {/* Main navbar container */}
       <div className="container px-8 mx-auto flex p-5 items-center justify-between">
         {/* Logo */}
@@ -35,7 +35,7 @@ export default function HeaderA() {
           </Link>
         </nav>
         <div className="hidden md:block ml-13">
-          <Button />
+          <Button text="Book a Demo" href="/demo" />
         </div>
 
         {/* Hamburger Button */}
@@ -106,7 +106,7 @@ export default function HeaderA() {
                 Employer Login
               </Link>
               <div className="ml-2">
-                <Button />
+                <Button text="Book a Demo" href="/demo" />
               </div>
             </nav>
           </div>
