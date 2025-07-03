@@ -5,7 +5,7 @@ export const layoutConfig = {
     footer: 'A',
     title: 'Welcome to Home Page',
   },
-  about: {
+  admin: {
     header: 'B',
     footer: 'C',
     title: 'About Us',

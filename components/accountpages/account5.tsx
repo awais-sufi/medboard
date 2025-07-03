@@ -15,6 +15,7 @@ const Account5 = () => {
               width={174}
               height={32}
               priority
+              style={{ width: "auto", height: "auto" }}
             />
           </Link>
         </div>

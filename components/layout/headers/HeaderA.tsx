@@ -19,6 +19,7 @@ export default function HeaderA() {
             width={174}
             height={32}
             priority
+            style={{ width: "auto", height: "auto" }}
           />
         </Link>
 
@@ -34,14 +35,16 @@ export default function HeaderA() {
             Employer Login
           </Link>
         </nav>
-        <div className="hidden md:block ml-13">
+        <div className="hidden md:block ml-12">
           <Button text="Book a Demo" href="/demo" />
         </div>
 
-        {/* Hamburger Button */}
+        {/* Hamburger Button (always visible and above everything) */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-gray-900 focus:outline-none z-50"
+          className="md:hidden text-gray-900 z-50"
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
         >
           <svg
             className="w-6 h-6"
@@ -53,9 +56,9 @@ export default function HeaderA() {
             viewBox="0 0 24 24"
           >
             {menuOpen ? (
-              <path d="M6 18L18 6M6 6l12 12" />
+              <path d="M6 18L18 6M6 6l12 12" /> // Close (X)
             ) : (
-              <path d="M4 6h16M4 12h16M4 18h16" />
+              <path d="M4 6h16M4 12h16M4 18h16" /> // Hamburger
             )}
           </svg>
         </button>
@@ -75,9 +78,10 @@ export default function HeaderA() {
                 <Image
                   src="/images/logo.svg"
                   alt="MedBoard Logo"
-                  width={200}
-                  height={40}
+                  width={174}
+                  height={32}
                   priority
+                  style={{ width: "auto", height: "auto" }}
                 />
               </Link>
             </div>

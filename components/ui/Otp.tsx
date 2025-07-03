@@ -70,7 +70,7 @@ export default function Otp1() {
   return (
     <section className="bg-white pt-10 mb-2 dark:bg-dark">
       <div className="container">
-        <form id="otp-form" className="flex gap-2">
+        <form id="otp-form" className="flex gap-1.5 md:gap-2">
           {otp.map((digit, index) => (
             <input
               key={index}
@@ -84,7 +84,7 @@ export default function Otp1() {
               ref={(el) => {
                 inputRefs.current[index] = el;
               }}
-              className="w-12 border-b-2 border-green-500 text-gareen bg-transparent text-center text-2xl font-bold outline-none focus:border-b-4 transition-all duration-200"
+              className="w-10 md:w-12 border-b-2 border-green-500 text-green-600 bg-transparent text-xl md:text-2xl font-bold text-center outline-none focus:border-b-4 transition-all duration-200"
             />
           ))}
         </form>

@@ -6,26 +6,29 @@ import Image from "next/image";
 const demo2 = () => {
   return (
     <div className="container pt-10 px-4 sm:px-6 md:px-8 mx-auto">
-      <div className="relative flex items-center justify-center py-4">
-        {/* Back button on the left */}
+      <div className="relative flex flex-col-reverse items-center sm:flex-row sm:justify-center sm:items-center px-4 py-4">
+        {/* Back button - mobile below, desktop on left */}
         <button
           onClick={() => window.history.back()}
-          className="absolute left-2 sm:left-4 text-black text-base sm:text-lg font-medium hover:underline cursor-pointer"
+          className="sm:absolute sm:left-4 text-black text-2xl font-medium hover:underline mt-3 sm:mt-0"
         >
           Back
         </button>
-        <Link href="/">
+
+        {/* Logo - always centered */}
+        <Link href="/" className="flex justify-center">
           <Image
             src="/images/logo.svg"
             alt="MedBoard Logo"
             width={174}
             height={32}
             priority
+            style={{ width: "auto", height: "auto" }}
           />
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-10 md:py-25">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:py-10">
         {/* Left Side */}
         <div className="md:text-left">
           <h3 className="text-2xl sm:text-3xl font-bold mb-3 mt-6">

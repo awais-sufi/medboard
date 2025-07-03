@@ -24,17 +24,14 @@ const Testimonials = () => {
   return (
     <section className="bg-white">
       <div className="w-full container px-8 mx-auto">
-        <h1 className="text-2xl px-4 mb-12 font-inter flex justify-center lg:justify-start">
+        <h1 className="text-2xl px-4 mb-12 font-inter flex ">
           What people Say about us
         </h1>
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white mb-6 h-full px-3 py-4 text-center lg:text-left"
-            >
+            <div key={index} className="bg-white mb-6 h-full py-4 ">
               {/* Profile Image */}
-              <div className="flex justify-center lg:justify-start">
+              <div className="flex ">
                 <Image
                   alt="testimonial"
                   src="/images/testimo.svg"
@@ -51,18 +48,19 @@ const Testimonials = () => {
               </p>
 
               {/* Star Rating */}
-              <div className="flex justify-center lg:justify-start">
+              <div className="flex ">
                 <Image
                   alt="star rating"
                   src="/images/testistar.svg"
                   width={160}
                   height={24}
                   className="mb-4"
+                  style={{ width: "auto", height: "auto" }}
                 />
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-sm font-inter leading-relaxed whitespace-pre-line">
+              <p className="text-base font-inter leading-relaxed whitespace-pre-line">
                 {testimonial.text}
               </p>
             </div>

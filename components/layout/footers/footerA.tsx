@@ -5,9 +5,9 @@ export default function FooterA() {
   return (
     <footer className="bg-black text-white">
       <div className="w-full container px-8 mx-auto">
-        <div className="flex flex-col md:flex-row pt-14">
+        <div className="grid grid-cols-1 md:grid-cols-[70%_30%] gap-8 py-10 ">
           {/* Left Section */}
-          <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="flex flex-col items-start ">
             <Link href="/" className="flex items-center mb-4">
               <Image
                 src="/images/footerlogo.svg"
@@ -15,11 +15,11 @@ export default function FooterA() {
                 width={174}
                 height={32}
                 priority
-                style={{ height: "auto" }} // ✅ Maintain aspect ratio
+                style={{ width: "auto", height: "auto" }}
               />
             </Link>
 
-            <p className="text-sm font-quicksand text-gray leading-relaxed mb-10">
+            <p className="text-lg font-quicksand text-gray leading-relaxed mb-10">
               Medbord is a Healthcare staffing
               <br />
               And social media services, handled by
@@ -27,13 +27,13 @@ export default function FooterA() {
               Medbord LLC.
             </p>
 
-            <div className="flex w-full text-center max-w-md mt-2 mx-auto justify-center sm:mx-0 sm:justify-start">
+            <div className="flex flex-col md:flex-row w-full max-w-md mt-2 text-center md:text-left">
               <input
                 type="text"
                 placeholder="Email address"
-                className="px-7 text-xs py-3 text-black bg-white focus:outline-none"
+                className="px-7 text-base py-3 text-black bg-white focus:outline-none w-full md:rounded-r-none md:border-r-0"
               />
-              <button className="px-6 py-3 text-xs bg-gareen text-white">
+              <button className="px-6 py-3 text-base bg-gareen text-white w-full md:w-auto md:rounded-l-none mt-3 md:mt-0">
                 Subscribe
               </button>
             </div>
@@ -77,46 +77,45 @@ export default function FooterA() {
           </div>
 
           {/* Right Section */}
-          <div className="md:w-1/2 flex  justify-center md:justify-end">
-            <nav className="text-center  md:text-left">
-              <ul className="space-y-4 ">
-                <li>
-                  <Link href="/" className="hover:text-gray-400">
-                    Terms and Conditions
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" className="hover:text-gray-400 ">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" className="hover:text-gray-400">
-                    Contact Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" className="hover:text-gray-400">
-                    Investors Center
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" className="hover:text-gray-400">
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" className="hover:text-gray-400">
-                    Help
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
+
+          <nav className="flex text-left">
+            <ul className="space-y-6">
+              <li>
+                <Link href="/" className="hover:text-gray-400">
+                  Terms and Conditions
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="hover:text-gray-400 ">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="hover:text-gray-400">
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="hover:text-gray-400">
+                  Investors Center
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="hover:text-gray-400">
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="hover:text-gray-400">
+                  Help
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
 
         {/* Bottom Copyright */}
-        <p className="mt-12 font-poppins pb-2 text-center text-sm text-[#989898]">
+        <p className="font-poppins pb-4 text-center text-lg text-[#989898]">
           © Copyright 2021 Medbord LLC. All Rights Reserved.
         </p>
       </div>

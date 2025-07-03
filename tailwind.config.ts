@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+       colors: {
+        gareen: '#31C137', // replace with your custom green
+      },
       fontFamily: {
         inter: ['var(--font-inter)'],
         ubuntu: ['var(--font-ubuntu)'],

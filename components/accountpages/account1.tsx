@@ -13,6 +13,7 @@ const account1 = () => {
           width={174}
           height={32}
           priority
+          style={{ width: "auto", height: "auto" }}
         />
       </Link>
 
@@ -22,9 +23,11 @@ const account1 = () => {
           <Image
             src="/images/demopic.svg"
             alt="Doctor Illustration"
-            width={350}
-            height={350}
-            className="mx-auto md:mx-0 max-w-full h-auto"
+            width={150}
+            height={150}
+            style={{ height: "auto", width: "auto" }}
+            className="mx-auto md:mx-0 max-w-full"
+            priority
           />
           <h3 className="text-2xl sm:text-3xl font-bold mb-3 mt-6">
             One network to hire <br className="hidden sm:block" /> the best

@@ -2,21 +2,28 @@ import type { Metadata } from "next";
 import { Ubuntu, Inter, Poppins, Quicksand } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 const ubuntu = Ubuntu({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-ubuntu",
+  display: "swap",
 });
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-poppins",
+  display: "swap",
 });
 const quicksand = Quicksand({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-quicksand",
+  display: "swap",
 });
 
 export const metadata: Metadata = {

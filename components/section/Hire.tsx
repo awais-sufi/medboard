@@ -11,7 +11,7 @@ const Hire = () => {
       <div className="w-full container px-8 mx-auto">
         {/* Header Row with Clickable Dot and Divider */}
         <div
-          className="flex items-center mb-14 cursor-pointer"
+          className="flex flex-wrap items-center mb-14 cursor-pointer"
           onClick={toggleDot}
         >
           <span
@@ -19,10 +19,10 @@ const Hire = () => {
               isFilled ? "bg-green-500" : "bg-transparent"
             }`}
           ></span>
-          <h2 className="text-4xl font-bold  whitespace-nowrap mr-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mr-4">
             Why hire through us
           </h2>
-          <div className="flex-grow border-t border-gray-200"></div>
+          <div className="flex-grow border-t border-gray-200 mt-4 md:mt-0 w-full md:w-auto"></div>
         </div>
 
         {/* Grid Layout for Content */}
@@ -66,9 +66,9 @@ const Hire = () => {
             <Image
               src="/images/hire.svg"
               alt="Doctor Illustration"
+              style={{ width: "100%", height: "auto" }} // must override both
               width={550}
               height={550}
-              className="max-w-full h-auto"
             />
           </div>
         </div>

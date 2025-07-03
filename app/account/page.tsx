@@ -13,6 +13,7 @@ const AccountPage = () => {
           width={174}
           height={32}
           priority
+          style={{ width: "auto", height: "auto" }}
         />
       </Link>
 
@@ -22,10 +23,13 @@ const AccountPage = () => {
           <Image
             src="/images/demopic.svg"
             alt="Doctor Illustration"
-            width={350}
-            height={350}
-            className="mx-auto md:mx-0 max-w-full h-auto"
+            width={150}
+            height={150}
+            style={{ height: "auto", width: "auto" }}
+            className="mx-auto md:mx-0 max-w-full"
+            priority
           />
+
           <h3 className="text-2xl sm:text-3xl font-bold mb-3 mt-6">
             One network to hire <br className="hidden sm:block" /> the best
             healthcare professionals
@@ -61,7 +65,7 @@ const AccountPage = () => {
           ].map((placeholder, index) => (
             <div
               key={index}
-              className="flex w-full border border-gray-300 mb-3 text-center max-w-md mt-2 mx-auto sm:mx-0 sm:justify-start"
+              className="flex w-full border border-gray-300 mb-3 text-center max-w-md mt-2 sm:mx-0 sm:justify-start"
             >
               <input
                 type="text"
