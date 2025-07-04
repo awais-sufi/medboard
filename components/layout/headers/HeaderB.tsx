@@ -8,7 +8,7 @@ export default function HeaderB() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white shadow-2xl z-50">
+    <header className="w-full bg-white shadow">
       {/* Navbar */}
       <div className="container px-6 md:px-8 mx-auto flex p-5 items-center justify-between">
         {/* Logo */}

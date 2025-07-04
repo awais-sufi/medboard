@@ -7,8 +7,8 @@ export const layoutConfig = {
   },
   admin: {
     header: 'B',
-    footer: 'C',
-    title: 'About Us',
+    footer: 'none',
+    title: 'Admin',
   },
   contact: {
     header: 'none',

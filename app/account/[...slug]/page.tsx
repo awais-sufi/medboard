@@ -29,12 +29,6 @@ export default function AccountSlugPage() {
     case 5:
       content = <Account5 />;
       break;
-    // case 5:
-    //   content = <Step6 />;
-    //   break;
-    // case 6:
-    //   content = <Step7 />;
-    //   break;
     default:
       content = <p>All steps completed ✅</p>;
   }
